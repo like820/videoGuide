@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>.guides™</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+
+</head>
+
+<body>
+  <div class="guide-container">
+    
+  <div class="menu-container scrolled">
+    <div class="burger-menu">
+
+      <nav class="index">
+          
+        <!-- <h2  contenteditable="true">.world™guide</h2> -->
+        <h2>.world™guide</h2>
+        <img src="logoWhite.png" alt="logo" class="logo wet">
+        <ul>
+          <li><a href="#step0" data-step="0"><span class="number">0</span><span class="description">Dive In</span></a></li>
+          <li><a href="#step1" data-step="1"><span class="number">1</span><span class="description">Start with a Drop</span></a></li>
+          <li><a href="#step2" data-step="2"><span class="number">2</span><span class="description">Flow with It</span></a></li>
+          <li><a href="#step3" data-step="3"><span class="number">3</span><span class="description">Re-Use What's Around</span></a></li>
+          <li><a href="#step4" data-step="4"><span class="number">4</span><span class="description">Stay Fluid</span></a></li>
+         
+          
+        </ul>
+      </nav>
+   
+    </div>
+   
+    <div class="textVideo">
+      <div class="progress-bar" id="progressBar"></div>
+      <div class="current-step-title"></div>
+
+
+    <video id="video" playsinline poster="brain_compressed.webp">
+      <source src="lowresVideoBoxEssembly.webm" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  </div>
+
+
+  
+  <div class="guide-steps">
+    <section id="step0" data-timestamp="0">
+      <h2>Take a Deep Breath 🤿</h2>
+      <h3>Prepare Yourself</h3>
+      <p>Before starting any creative project, it's essential to center yourself. Take a moment to breathe deeply and clear your mind. This will help you focus and set a positive intention for your creative journey.</p>
+    </section>
+
+    <section id="step1" data-timestamp="50">
+      <h2>Cut on Dotted Lines</h2>
+      <h3>Precision Matters</h3>
+      <p>Using scissors, carefully cut along the dotted lines of your materials. This step is crucial for ensuring that your pieces fit together perfectly later on. Take your time and make sure your cuts are clean and precise.</p>
+    </section>
+
+
+    <section id="step2" data-timestamp="200">
+      <h2>Fold with Arrow</h2>
+      <h3>Shape Your Creation</h3>
+      <p>Follow the indicated arrows to fold your project accurately. Folding is an essential technique that adds dimension and structure to your creation. Ensure that your folds are crisp and aligned for the best results.</p>
+    </section>
+
+
+    <section id="step3" data-timestamp="666">
+      <h2>Glue on Zigzags</h2>
+      <h3>Stick with Style</h3>
+      <p>Apply glue in a zigzag pattern on the edges of your cut pieces. This not only adds a creative flair but also ensures that the pieces adhere well. Make sure to use enough glue to secure the pieces without making a mess.</p>
+    </section>
+
+
+    <section id="step4" data-timestamp="1200">
+      <h2>Let It Dry & Enjoy 😊</h2>
+      <h3>Final Touches</h3>
+      <p>After assembling your project, allow it to dry completely. This step is vital for ensuring that all parts are securely attached. Once dry, take a moment to admire your work and enjoy the satisfaction of your creative effort!</p>
+    </section>
+
+ 
+
+
+
+
+</section>
+<svg class="svg">
+    <filter id="warp"> 
+      <feTurbulence
+      type="fractalNoise"
+      baseFrequency="0.001"| numOctaves="1" result="waves"
+      ></feTurbulence>
+  <feColorMatrix in="waves" type="hueRotate">
+  <animate
+  attributeName="values" 
+  values="0;360" 
+  dur="8s" 
+  repeatCount="indefinite"
+  ></animate>
+  </feColorMatrix>
+  <feDisplacementMap
+xChannelSelector="R" 
+yChannelSelector="G"
+  scale="50"
+  in="SourceGraphic"
+  ></feDisplacementMap>
+  </svg>
+  <script  src="./script.js"></script>
+
+</body>
+
+</html>
